@@ -41,7 +41,8 @@ Ex: addKeyPowerIndex(arrOfObj2)
 function addKeyPowerIndex(arr) {
 
   var i = 0;
-  var y = 0 *y
+  var y = 0
+  var multi = y * y;
   
   arr.forEach(item, index => {
     
