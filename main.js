@@ -1,6 +1,6 @@
 console.log('GOOD LUCK 👩‍💻 👨‍💻')
 /* Q1:
-Usind For Each
+Using For Each
 Create a function called addKeyPowerIndex
 that takes an array of objects as a parameter
 and return this array with add a key to each object
@@ -38,8 +38,16 @@ Ex: addKeyPowerIndex(arrOfObj2)
 ]   
 */
 
-function addKeyPowerIndex() {
-  // WRITE YOUR CODE UNDER THIS LINE  
+function addKeyPowerIndex(arr) {
+
+  var i = 0;
+  var y = 0 *y
+  
+  arr.forEach(item, index => {
+    
+    arr.push('key: ' + i + ', value: ' + y)
+
+  });
 
 }
 
@@ -64,9 +72,17 @@ Ex: decreseBy(arrOfNum1,-6)
 => [83, 11, 39]
 */
 
-function decreseBy() {
-  // WRITE YOUR CODE UNDER THIS LINE 
 
+// Doooooone :p
+
+function decreseBy(arr, num) {
+  
+  var newArr = []
+
+  arr.map(Element => {
+    newArr.push(Element - num)
+  })
+  return newArr;
 }
 
 
@@ -102,8 +118,25 @@ Ex: nameLongerThan(arrOfObj4,6)
 ]
 */
 
-function nameLongerThan() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+
+
+// Doooooone :p
+
+function nameLongerThan(arr, num) {
+
+  var max = []
+
+  var result = arr.filter((value, index) => {
+
+    if (arr[index]['name'].length > num) {
+
+      max = arr[index];
+      
+      return max;
+
+  }
+  })
+  return max;
 }
 
 
@@ -133,8 +166,13 @@ Ex: avgLength(arrOfObj4,"food")
 => 6.8
 */
 
-function avgLength() {
-  // WRITE YOUR CODE UNDER THIS LINE         
+function avgLength(arr, key) {
+
+  // var len = arr[]; 
+
+  arr.reduce((total, element) => {
+    console.log(arr[element][name].length)
+  })
 
 }
 
